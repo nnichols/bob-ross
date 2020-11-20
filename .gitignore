@@ -1,0 +1,14 @@
+**/.calva
+**/.cpcache
+/target
+/classes
+/checkouts
+*.jar
+*.class
+*.swp
+/.cpcache
+/.lein-*
+/.nrepl-history
+/.nrepl-port
+.hgignore
+.hg/
