@@ -10,10 +10,19 @@
 
 (defroutes v1
   (GET "/v1/episodes/subject/:subject" {{:keys [subject]} :params}
-    (response (ross/find-episodes-by-subject subject)))
+    (let [episodes (ross/find-episodes-by-subject subject)]
+      (if (empty? episodes)
+        {:status 404}
+        (response episodes))))
 
   (GET "/v1/episodes/season/:season/episode/:episode" {{:keys [season episode]} :params}
-    (response (ross/find-subjects-by-episode season episode)))
+    (let [subjects (ross/find-subjects-by-episode season episode)]
+      (if (= :not-found subjects)
+        {:status 404}
+        (response subjects))))
+  
+  (GET "/v1/episodes/subject" {}
+    (response ross/subjects))
 
   (route/not-found (response {:message "not found"})))
 
