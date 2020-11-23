@@ -4,7 +4,7 @@
 
 (deftest ^:first first-episode-test
   (testing "Ensure students know the first episode's title"
-    (is (= "A WALK IN THE WOODS" (ross/first-episode-title)))))
+    (is (= "\"A WALK IN THE WOODS\"" (ross/first-episode-title)))))
 
 (deftest ^:second boat-episode-test
   (testing "Ensure students can identify if an episode contains a boat"
