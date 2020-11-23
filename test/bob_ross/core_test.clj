@@ -21,7 +21,7 @@
 
 (deftest ^:fourth-challenge find-episodes-test-challenge
   (testing "Ensure students can aggregate episodes by subject"
-    (is (= (ross/find-episodes-by-subject "tREe") (ross/find-episodes-by-subject :STEVE_ROSS)))))
+    (is (= (ross/find-episodes-by-subject "tREe") (ross/find-episodes-by-subject :TREE)))))
 
 (deftest ^:fifth find-subjects-by-episode-test
   (testing  "Ensure students can lookup episodes by id"
