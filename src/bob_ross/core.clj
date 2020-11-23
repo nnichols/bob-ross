@@ -21,11 +21,11 @@
 
 (defn find-episodes-by-subject
   "Bob Ross was best known for painting happy little trees, but painted many familiar subjects.
-   Given a string, such as 'Tree', find every episode identifier (e.g. 'S01E01') that had a tree painted in it."
+   Given a keyword, such as ':TREE', find every episode identifier (e.g. 'S01E01') that had a tree painted in it."
   [subject])
 
 (defn find-subjects-by-episode
   "The Joy of Painting taught viewers how to paint several of nature's gifts each episode.
-   Given an episode and season number (e.g. '1' '1'), return a list of the things painted in that episode ('TREE', 'BUSHES', ...).
+   Given an episode and season number (e.g. '1' '1'), return a list of the things painted in that episode (:TREE, :BUSHES, ...).
    If no episode exists for that combination (e.g. '-1' '10000'), return :not-found"
   [season-number episode-number])

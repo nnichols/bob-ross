@@ -5,7 +5,8 @@
             [compojure.route :as route]
             [ring.util.response :refer [response]]
             [ring.middleware.params :refer [wrap-params]]
-            [ring.middleware.json :refer [wrap-json-response]]))
+            [ring.middleware.json :refer [wrap-json-response]])
+  (:gen-class))
 
 (defroutes v1
   (GET "/v1/episodes/subject/:subject" {{:keys [subject]} :params}
