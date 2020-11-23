@@ -1,0 +1,10 @@
+{
+	"name": "Clojure",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"betterthantomorrow.calva"
+	],
+	"settings":{
+		"calva.jokerPath": "/usr/bin"
+	}
+}
