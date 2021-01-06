@@ -1,0 +1,17 @@
+name: Clojure Tests
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Latest Commit
+      uses: actions/checkout@v1
+
+    - name: Check deps
+      uses: nnichols/clojure-dependency-update-action@234eb75c885126deebc054ac2a294954375d5789
+      with:
+        github-token: ${{ secrets.github_token }}
