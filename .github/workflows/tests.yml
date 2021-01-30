@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Check deps
-      uses: nnichols/clojure-dependency-update-action@08cf70607ac2dd62a76d16417fe9866a4ad42bcd
+      uses: nnichols/clojure-dependency-update-action@ebf470712eab6fdaa46d5dc1f89246fef42e20eb
       with:
         github-token: ${{ secrets.github_token }}
         git-email: nichols1991@gmail.com
