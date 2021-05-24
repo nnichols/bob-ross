@@ -3,7 +3,7 @@ FROM clojure:openjdk-16-tools-deps-alpine
 # Allow for a consistant java home location for settings - image is changing over time
 RUN if [ ! -d "/docker-java-home" ]; then ln -s "${JAVA_HOME}" /docker-java-home; fi
 
-RUN apk add wget
+RUN apk add wget git
 
 # install joker
 ENV JOKER_VERSION=0.12.4
