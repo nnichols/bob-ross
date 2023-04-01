@@ -14,7 +14,7 @@ jobs:
         ref: ${{ github.head_ref }}
 
     - name: Check deps
-      uses: nnichols/clojure-dependency-update-action@0d8427834dd37d2544f3fca3d5ad9a00d27c6dec
+      uses: nnichols/clojure-dependency-update-action@f6fb2d9c883a334d5c35fc0fcdbee305463b9b9b
       with:
         github-token: ${{ secrets.github_token }}
         git-email: nichols1991@gmail.com
