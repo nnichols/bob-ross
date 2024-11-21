@@ -10,5 +10,5 @@
                                 ring/ring-mock            {:mvn/version "0.4.0"}
                                 talltale/talltale         {:mvn/version "0.5.14"}
                                 com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner"
-                                                           :sha     "7284cda41fb9edc0f3bc6b6185cfb7138fc8a023"}}
+                                                           :sha     "3f288f1f16d167723ad87cc35b1dfee3c1681e10"}}
                   :main-opts   ["-m" "cognitect.test-runner"]}}}
