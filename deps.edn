@@ -1,7 +1,7 @@
 {:paths   ["src" "resources"]
  :deps    {org.clojure/clojure             {:mvn/version "1.11.4"}
            org.clojure/data.csv            {:mvn/version "1.0.1"}
-           compojure                       {:mvn/version "1.7.0"}
+           compojure                       {:mvn/version "1.7.1"}
            ring/ring                       {:mvn/version "1.11.0"}
            ring/ring-json                  {:mvn/version "0.5.1"}
            com.wallbrew/common-beer-format {:mvn/version "2.2.1"}}
